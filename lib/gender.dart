@@ -22,6 +22,16 @@ class Gender extends StatelessWidget {
               },
               child: Text("Male"),
             ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (_) => Onboard()),
+                );
+              },
+              child: Text("Female"),
+            ),
           ],
         ),
       ),
