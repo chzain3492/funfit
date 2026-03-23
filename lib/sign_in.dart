@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/onboard.dart';
 import 'forgot_password.dart';
 
 class SignIn extends StatelessWidget {
   final TextEditingController email = TextEditingController();
   final TextEditingController password = TextEditingController();
+
+  SignIn({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +32,10 @@ class SignIn extends StatelessWidget {
                   ScaffoldMessenger.of(
                     context,
                   ).showSnackBar(SnackBar(content: Text("Login Successful")));
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (_) => Onboard()),
+                  );
                 } else {
                   ScaffoldMessenger.of(
                     context,
