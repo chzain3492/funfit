@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'onboard.dart';
+import 'package:flutter_application_1/onboard.dart';
 
-class Gender extends StatelessWidget {
-  const Gender({super.key});
+class GenderScreen extends StatelessWidget {
+  const GenderScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,13 +11,13 @@ class Gender extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Your Gender?"),
+            Text("Select Your Gender"),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (_) => Onboard()),
+                  MaterialPageRoute(builder: (_) => const Onboard()),
                 );
               },
               child: Text("Male"),
@@ -27,7 +27,7 @@ class Gender extends StatelessWidget {
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (_) => Onboard()),
+                  MaterialPageRoute(builder: (_) => const Onboard()),
                 );
               },
               child: Text("Female"),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'sign_in.dart';
+import 'package:flutter_application_1/gender_screen.dart';
 
 class Onboard extends StatelessWidget {
   const Onboard({super.key});
@@ -17,7 +17,7 @@ class Onboard extends StatelessWidget {
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (_) => SignIn()),
+                  MaterialPageRoute(builder: (_) => const GenderScreen()),
                 );
               },
               child: Text("I am Ready"),
